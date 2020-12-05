@@ -1,5 +1,4 @@
 const fetch = require('node-fetch');
-
 const server = 'https://api.got.show';
 
 const rest = async (endpoint) => {
@@ -9,6 +8,7 @@ const rest = async (endpoint) => {
 };
 
 const request = (endpoint, callback) => {
+// el proceso de comunicacion se hace en el rest
   rest(endpoint)
     .then((result) => {
       callback(result);

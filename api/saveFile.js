@@ -9,7 +9,7 @@ const toJSON = (objectToSave) => {
       console.log("The file has been saved!");
     };
     const fileName = path.join(__dirname, "../", "data/got.json");
-
+// esto sirve para sobreescribir el archivo que ya tenemos
     fs.writeFile(
       fileName,
       json,
